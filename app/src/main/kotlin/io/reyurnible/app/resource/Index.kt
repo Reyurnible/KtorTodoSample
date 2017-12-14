@@ -1,4 +1,4 @@
-package io.reyurnible.todo
+package io.reyurnible.app.resource
 
 import io.ktor.application.call
 import io.ktor.response.respondText

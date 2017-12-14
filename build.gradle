@@ -1,7 +1,6 @@
 buildscript {
     ext {
         kotlin_version = '1.2.0'
-        ktor_version = '0.9.0'
     }
 
     repositories {
@@ -15,10 +14,4 @@ buildscript {
 allprojects {
     group 'io.reyurnible'
     version '1.0-SNAPSHOT'
-
-    repositories {
-        mavenCentral()
-        maven { url "http://dl.bintray.com/kotlin/ktor" }
-        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
-    }
 }
