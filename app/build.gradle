@@ -41,6 +41,7 @@ def squash_version = '0.2.3'
 dependencies {
     // Kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     // Framework : Ktor
     compile "io.ktor:ktor-server-core:$ktor_version"
     compile "io.ktor:ktor-server-${host}:$ktor_version"
@@ -50,6 +51,12 @@ dependencies {
     // DB Access : Squash
     compile "org.jetbrains.squash:squash:$squash_version"
     compile "org.jetbrains.squash:squash-h2:$squash_version"
+    // HikariCP
+    compile "com.zaxxer:HikariCP:2.7.4"
+    // Logging
+    compile "ch.qos.logback:logback-classic:1.2.1"
+    // Joda Time
+    compile "joda-time:joda-time:2.9.9"
     // Test Compile
     testCompile "junit:junit:4.12"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
