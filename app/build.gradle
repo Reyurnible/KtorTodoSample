@@ -45,7 +45,6 @@ dependencies {
     // Framework : Ktor
     compile "io.ktor:ktor-server-core:$ktor_version"
     compile "io.ktor:ktor-server-${host}:$ktor_version"
-    compile "io.ktor:ktor-locations:$ktor_version"
     // JSON Mapping : Gson
     compile "io.ktor:ktor-gson:$ktor_version"
     // DB Access : Squash

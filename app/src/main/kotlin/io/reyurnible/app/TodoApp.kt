@@ -6,7 +6,6 @@ import io.ktor.application.install
 import io.ktor.features.*
 import io.ktor.gson.GsonConverter
 import io.ktor.http.ContentType
-import io.ktor.locations.Locations
 import io.ktor.routing.Routing
 import io.reyurnible.app.controller.index
 import io.reyurnible.app.controller.todo
@@ -27,7 +26,6 @@ class TodoApp {
         install(ContentNegotiation) {
             register(ContentType.Application.Json, GsonConverter(gson))
         }
-        install(Locations) // @locationしたroutingを読み取ってる
         install(Routing) {
             index(database)
             todo(database)
